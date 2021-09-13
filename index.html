@@ -64,14 +64,38 @@
         <br />
         I'm a game developer.
       </div>
-      <button class="intro__button">
+      <button
+        class="intro__button"
+        onClick="document.getElementById('navbar').scrollIntoView();"
+      >
         Take a look
         <i class="fas fa-arrow-right" aria-hidden="true"> </i>
       </button>
     </div>
 
+    <!-- Divider -->
+    <!-- <div class="divider"></div> -->
+
+    <!-- Nav Bar -->
+    <div class="navbar" id="navbar">
+      <button
+        class="navbar__button"
+        onClick="document.getElementById('about').scrollIntoView();"
+      >
+        About Me
+      </button>
+      <button
+        class="navbar__button"
+        onClick="document.getElementById('project').scrollIntoView();"
+      >
+        Projects
+      </button>
+      <a class="navbar__button" href=".\Tyler's Resume.pdf">Resume</a>
+      <button class="navbar__button">Contact</button>
+    </div>
+
     <!-- About Me -->
-    <section class="section">
+    <section class="section" id="about">
       <div class="section__title">About Me</div>
       <div class="section__body">
         Nulla pariatur proident minim ullamco anim tempor. Pariatur voluptate
@@ -103,7 +127,7 @@
     </section>
 
     <!-- Projects -->
-    <section class="section project">
+    <section class="section project" id="project">
       <img src="/image.jpg" alt="" class="project__img" />
       <div class="project__content">
         <div class="project__title">Title</div>
