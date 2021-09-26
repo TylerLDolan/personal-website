@@ -32,31 +32,11 @@
       src="https://kit.fontawesome.com/b095b8c359.js"
       crossorigin="anonymous"
     ></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
   </head>
 
   <body>
-    <!-- Header -->
-    <!-- <header>
-      <div class="logo">
-        <img src="/image.jpg" alt="" />
-      </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">My Services</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About Me</a>
-          </li>
-          <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
-        </ul>
-      </nav>
-    </header> -->
-
     <!-- Introduction -->
     <div class="intro" id="home">
       <div class="intro__title">
@@ -66,7 +46,7 @@
       </div>
       <button
         class="intro__button"
-        onClick="document.getElementById('navbar').scrollIntoView();"
+        onClick="document.getElementById('about').scrollIntoView();"
       >
         Take a look
         <i class="fas fa-arrow-right" aria-hidden="true"> </i>
@@ -91,7 +71,42 @@
         Projects
       </button>
       <a class="navbar__button" href=".\Tyler's Resume.pdf">Resume</a>
-      <button class="navbar__button">Contact</button>
+      <button
+        class="navbar__button"
+        onClick="document.getElementById('footer').scrollIntoView();"
+      >
+        Contact
+      </button>
+    </div>
+
+    <!-- Hamburger -->
+
+    <button class="hamburger" id="hamburger" onclick="navmenuMove()">
+      <i class="fas fa-bars" id="bars"></i>
+      <i class="fas fa-times" id="times"></i>
+    </button>
+
+    <div class="navmenu" id="navmenu">
+      <button
+        class="navmenu__button"
+        onClick="document.getElementById('about').scrollIntoView(); navmenuMove()"
+      >
+        About Me
+      </button>
+      <div class="navmenu__spacer"></div>
+      <button
+        class="navmenu__button"
+        onClick="document.getElementById('project').scrollIntoView(); navmenuMove()"
+      >
+        Projects
+      </button>
+      <div class="navmenu__spacer"></div>
+      <button
+        class="navmenu__button"
+        onClick="document.getElementById('footer').scrollIntoView(); navmenuMove();"
+      >
+        Contact
+      </button>
     </div>
 
     <!-- About Me -->
@@ -150,9 +165,9 @@
     </section>
 
     <!-- Footer -->
-    <!-- <footer class="footer">
-      <a href="mailto:TylerLucasDolan@gmail.com" class="footer__link"
-        >TylerLucasDolan@gmail.com</a
+    <footer class="footer" id="footer">
+      <a href="mailto:TylerDolanWebsite@gmail.com" class="footer__link"
+        >TylerDolanWebsite@gmail.com</a
       >
       <ul class="social-list">
         <li class="social-list__item">
@@ -166,7 +181,7 @@
           </a>
         </li>
       </ul>
-    </footer> -->
+    </footer>
 
     <!-- <script src="js/index.js"></script> -->
   </body>
