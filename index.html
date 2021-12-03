@@ -40,21 +40,18 @@
     <!-- Introduction -->
     <div class="intro" id="home">
       <div class="intro__title">
-        Hi, my name is <span class="intro__highlight">Tyler Dolan</span>.
-        <br />
-        I'm a game developer.
+        Hi, my name is <span class="intro__highlight">Tyler Dolan</span>
+        <!-- <br />
+        I'm a game developer. -->
       </div>
       <button
         class="intro__button"
         onClick="document.getElementById('about').scrollIntoView();"
       >
-        Take a look
+        About Me
         <i class="fas fa-arrow-right" aria-hidden="true"> </i>
       </button>
     </div>
-
-    <!-- Divider -->
-    <!-- <div class="divider"></div> -->
 
     <!-- Nav Bar -->
     <div class="navbar" id="navbar">
@@ -63,12 +60,6 @@
         onClick="document.getElementById('about').scrollIntoView();"
       >
         About Me
-      </button>
-      <button
-        class="navbar__button"
-        onClick="document.getElementById('project').scrollIntoView();"
-      >
-        Projects
       </button>
       <a class="navbar__button" href=".\Tyler's Resume.pdf">Resume</a>
       <button
@@ -96,13 +87,6 @@
       <div class="navmenu__spacer"></div>
       <button
         class="navmenu__button"
-        onClick="document.getElementById('project').scrollIntoView(); navmenuMove()"
-      >
-        Projects
-      </button>
-      <div class="navmenu__spacer"></div>
-      <button
-        class="navmenu__button"
         onClick="document.getElementById('footer').scrollIntoView(); navmenuMove();"
       >
         Contact
@@ -110,79 +94,63 @@
     </div>
 
     <!-- About Me -->
-    <section class="section" id="about">
-      <div class="section__title">About Me</div>
-      <div class="section__body">
-        Nulla pariatur proident minim ullamco anim tempor. Pariatur voluptate
-        minim minim id aute. Cillum veniam duis qui ipsum laborum aute veniam
-        aliquip cupidatat cillum incididunt. Velit tempor qui velit aliqua ad
-        deserunt culpa enim tempor deserunt officia. Et esse exercitation ipsum
-        occaecat aute sunt. Aliqua dolore id aute laborum pariatur. Occaecat
-        nisi ex labore mollit cillum deserunt aliqua pariatur esse et velit
-        culpa. Ea labore deserunt deserunt mollit amet quis excepteur Lorem
-        esse. Aliqua enim veniam aute Lorem consequat anim reprehenderit quis
-        nostrud nulla ex Lorem quis. Consequat id nulla magna officia aliquip
-        aliquip. Dolor magna amet consequat sint eiusmod. Reprehenderit ipsum
-        exercitation veniam eu mollit id elit ex tempor cillum amet mollit
-        consectetur. Ex voluptate dolore est velit commodo ea sit aute ullamco
-        nostrud id laboris id. Ipsum ad mollit magna sint do nisi quis ad minim
-        quis veniam. Aliquip reprehenderit et cupidatat nulla eu officia nulla
-        sit deserunt sit dolore ipsum sunt.
-      </div>
-    </section>
-
-    <!-- Skills -->
+    <section class="section title" id="about">About Me</section>
     <section class="section">
-      <div class="section__title">Skills</div>
+      <div class="section__title">Background</div>
       <div class="section__body">
-        Nulla pariatur proident minim ullamco anim tempor. Pariatur voluptate
-        minim minim id aute. Cillum veniam duis qui ipsum laborum aute veniam
-        aliquip cupidatat cillum incididunt.
+        My passion for games stretches back to my childhood. I remember the
+        endless hours playing Paper Mario and Tony Hawk Pro Skater with my
+        siblings on the Nintendo 64, and nowadays, game nights are what bring my
+        friends and me together. I want to recreate this for others, thus I am
+        determined to develop games that foster memories and relationships.
+        <br /><br />
+        I began making video games in high school. I picked up GameMaker Studio
+        and made my very first platformer, and after that, I was hooked. In
+        college, I was fortunate enough to be introduced to graphics programming
+        and virtual reality development in Unity. Programming courses at
+        UW-Madison were largely taught with Java but with a focus on theory, so
+        my knowledge of data structures and algorithms extends beyond a single
+        language.
+      </div>
+    </section>
+    <section class="section">
+      <div class="section__title">Education</div>
+      <div class="section__body">
+        University of Wisconsin-Madison<br />B.S. in Computer Science<br />B.S.
+        in Mathematics for Programming and Computing<br />
+        Graduated: May 2021<br />
+        GPA: 3.5
       </div>
     </section>
 
-    <!-- Projects -->
-    <section class="section project" id="project">
-      <img src="/image.jpg" alt="" class="project__img" />
-      <div class="project__content">
-        <div class="project__title">Title</div>
-        <div class="project__body">
-          Aute ad qui dolor in occaecat sunt officia eu voluptate est proident
-          ad dolore veniam. Commodo occaecat irure aliqua ullamco et qui do.
-          Cupidatat nulla enim incididunt nisi id sit enim dolore deserunt
-          occaecat irure consectetur duis. Labore velit labore amet consectetur.
-        </div>
-        <ul class="project__techs">
-          <li>Tech1</li>
-          <li>Tech2</li>
-          <li>Tech3</li>
-        </ul>
-        <ul class="project__links">
-          <li>link1</li>
-          <li>link2</li>
-        </ul>
-      </div>
-    </section>
+    <!-- Resume -->
+    <section class="section title" id="resume">Resume</section>
+    <div class="resume__buttonFlex">
+      <a class="resume__button" href=".\Tyler's Resume.pdf">Download PDF</a>
+    </div>
+    <section class="section"></section>
 
     <!-- Footer -->
     <footer class="footer" id="footer">
+      <section class="section title footer__title" id="about">Contact</section>
       <a href="mailto:TylerDolanWebsite@gmail.com" class="footer__link"
         >TylerDolanWebsite@gmail.com</a
       >
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="social-list__link" href="">
-            <i class="fab fa-instagram"></i>
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/tyler-dolan-163931162/"
+          >
+            <i class="fab fa-linkedin"></i>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="">
+          <a class="social-list__link" href="https://github.com/TylerLDolan">
             <i class="fab fa-github"></i>
           </a>
         </li>
       </ul>
     </footer>
-
-    <!-- <script src="js/index.js"></script> -->
   </body>
 </html>
